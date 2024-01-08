@@ -1,1 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>
+    (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5VLTXD9N');</script>
+    <!-- End Google Tag Manager -->
 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--
+        <link rel="icon" type="image/x-icon" href="images/Feng_Shuangquan.jpg">
+    -->
+    <title>Shuangquan Feng</title>
+    <meta name="description" content="Shuangquan Feng's personal website">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5VLTXD9N"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!--
+        <header class="wrapper">
+            <div>
+                <p class="title">
+                    冯双全
+                    Shuangquan Feng
+                </p>
+            </div>
+            </a>
+        </header>
+    -->
+
+
+    <section class="whiteSection">
+        <div class="intro">
+            <div class="basic">
+                <img class="face" src="images/Feng_Shuangquan.jpg">
+                <!--
+                <img id="profile_image", class='face' src='images/Feng_Shuangquan.jpg' onmouseover="changeImage()" onmouseout="originalImage()">
+                <script>
+                    function changeImage() {
+                        document.getElementById("profile_image").src = "images/Feng_Shuangquan_2.jpg";
+                    }
+
+                    function originalImage() {
+                        document.getElementById("profile_image").src = "images/Feng_Shuangquan.jpg";
+                    }
+                </script>
+                -->
+                <div class="nameCH">
+                    <span class="pronounce" data-pronunciation="audios/Feng.mp3">冯</span><span class="pronounce" data-pronunciation="audios/Shuang.mp3">双</span><span class="pronounce" data-pronunciation="audios/Quan.mp3">全</span>
+                </div>
+                <div class="nameEN">
+                    <span class="pronounce" data-pronunciation="audios/Shuangquan.mp3">Shuangquan</span>
+                    <span class="pronounce" data-pronunciation="audios/Feng.mp3">Feng</span>
+                </div>
+
+                <script>
+                    document.querySelectorAll('span').forEach(word => {
+                        word.addEventListener('click', function () {
+                            new Audio(this.getAttribute('data-pronunciation')).play();
+                        });
+                    });
+                </script>
+
+                <p class="clickForPronunciation">
+                    [Click the names for pronunciation]
+                </p>
+
+                <p class="links">
+                    Email: <strong>s1feng [at] ucsd.edu</strong>
+                </p>
+
+                <p class="links">
+                    <a href="CV/Shuangquan_Feng_Curriculum_Vitae.pdf">CV</a> |
+                    <a href="https://scholar.google.com/citations?hl=en&user=_iWrm_UAAAAJ">Scholar</a> |
+                    <a href="https://github.com/ShuangquanFeng">GitHub</a> |
+                    <a href="https://www.linkedin.com/in/shuangquanfeng">Linkedin</a>
+                </p>
+            </div>
+
+            <div class="about">
+                <div class="sectionTitle">
+                    About
+                </div>
+                <p class="mainText">
+                    I am a Ph.D. student in the <a href="https://neurograd.ucsd.edu/">Neurosciences Graduate Program</a>
+                    at <a href="https://ucsd.edu/">University of California San Diego</a> (UCSD),
+                    advised by <a href="https://pages.ucsd.edu/~desa/">Virginia R. de Sa</a>.
+                    I previously received my B.S. in <a href="https://cogsci.ucsd.edu/undergraduates/major/machine-learning.html">Cognitive Science with a specialization in Machine Learning and Neural Computation</a> also from UCSD.
+                </p>
+                <p class="mainText">
+                    My research interests lie in <strong>computer vision</strong>, <strong>cognitive modeling</strong>, and <strong>computational neuroscience</strong>.
+                    My current research focuses on <strong>facial expression recognition</strong> and its applications.
+                    Active projects include:
+                    (1) application of facial expression recognition in assisting the improvement of image generation algorithms;
+                    (2) application of facial expression recognition in education;
+                    (3) incorporation of facial expression recognition into large language models (LLMs);
+                    (4) decoding of perceived images/videos from brain activity.
+                </p>
+                <!--
+                <p class="mainText">
+                    My email is <strong>s1feng [at] ucsd [dot] edu</strong>.
+                </p>
+                -->
+            </div>
+        </div>
+    </section>
+
+    <section class="graySection">
+        <div class="publications">
+            <div class="sectionTitle">
+                Selected Publications & Preprints
+            </div>
+
+            <div class="publication">
+                <div class="publicationImageSection">
+                    <img class="publicationImage" src="images/FERGI.png" />
+                </div>
+                <div class="publicationTextSection">
+                    <div class="publicationTextTitle">
+                        FERGI: Automatic Annotation of User Preferences for Text-to-Image Generation from Spontaneous Facial Expression Reaction
+                    </div>
+                    <div class="publicationTextAuthors">
+                        <a href="https://shuangquanfeng.github.io/"><strong>Shuangquan Feng</strong></a>*,
+                        Junhua Ma*,
+                        <a href="https://pages.ucsd.edu/~desa/">Virginia R. de Sa</a>
+                        <span class="publicationTextEqualContribution">(*equal contribution)</span>
+                    </div>
+                    <div class="publicationTextVenue">
+                        <i>arXiv</i>,
+                        2023
+                    </div>
+                    <div class="publicationTextSummary">
+                        Users' activation of action unit 4 (brow lowerer) consistently reflects negative evaluations of text-to-image generation,
+                        which can be used to automatically annotate user preferences for images generated by text-to-image generative models.
+                    </div>
+                    <div class="publicationTextLinks">
+                        <a class="publicationTextLink" href="https://arxiv.org/abs/2312.03187">Preprint</a>
+                        <a class="publicationTextLink" href="papers/FERGI Automatic Annotation of User Preferences for Text-to-Image Generation from Spontaneous Facial Expression Reaction.pdf">PDF</a>
+                        <a class="publicationTextLink" href="https://github.com/ShuangquanFeng/FERGI">Code</a>
+                        <a class="publicationTextLink" href="https://github.com/ShuangquanFeng/FERGI">Dataset</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="publication">
+                <div class="publicationImageSection">
+                    <img class="publicationImage" src="images/SACSP.png" />
+                </div>
+                <div class="publicationTextSection">
+                    <div class="publicationTextTitle">
+                        Improving Robustness in Motor Imagery Brain-Computer Interfaces
+                    </div>
+                    <div class="publicationTextAuthors">
+                        <a href="https://www.mahtamousavi.com/">Mahta Mousavi</a>,
+                        <a href="https://elybrand.github.io/">Eric Lybrand</a>,
+                        <a href="https://shuangquanfeng.github.io/"><strong>Shuangquan Feng</strong></a>,
+                        <a href="https://shuaitang.github.io/">Shuai Tang</a>,
+                        <a href="https://mathweb.ucsd.edu/~rsaab/">Rayan Saab</a>,
+                        <a href="https://pages.ucsd.edu/~desa/">Virginia R. de Sa</a>
+                    </div>
+                    <div class="publicationTextVenue">
+                        <i>NeurIPS DistShift Workshop</i>
+                        2021
+                    </div>
+                    <div class="publicationTextSummary">
+                        We propose a novel algorithm called Spectrally Adaptive Common Spatial Patterns (SACSP) that improves Common Spatial Patterns (CSP) by learning a temporal/spectral filter for each spatial filter so that the spatial filters are concentrated on the most relevant temporal frequencies for each user.
+                    </div>
+                    <div class="publicationTextLinks">
+                        <a class="publicationTextLink" href="https://openreview.net/forum?id=ov6Ct9IL0D2">Paper</a>
+                        <a class="publicationTextLink" href="https://arxiv.org/abs/2202.04542">Preprint</a>
+                        <a class="publicationTextLink" href="papers/Improving Robustness in Motor Imagery Brain-Computer Interfaces.pdf">PDF</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

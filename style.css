@@ -1,0 +1,291 @@
+body {
+    margin: 0;
+}
+
+img, video, table {
+    max-width: 100%
+}
+
+a:link, a:visited {
+    color: #2b87d4;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.whiteSection{
+    background: white;
+}
+
+.graySection {
+    background: #F0F0F0;
+}
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    max-width: 65rem;
+    padding-top: 1.2rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    padding-bottom: 1.2rem;
+}
+
+@media (max-width: 600px) {
+    .intro {
+        flex-direction: column;
+    }
+}
+
+    .intro .basic {
+        flex: 1;
+        padding: 5px;
+        text-align: center;
+    }
+
+        .intro .basic img.face {
+            max-width: 80%;
+            height: auto;
+            box-shadow: 0.05em 0.05em 0.2em rgba(0,0,0,0.3);
+            margin-top: .3rem;
+            position: relative;
+            display: inline-block; 
+        }
+
+@media (max-width: 600px) {
+    .intro .basic img.face {
+        max-width: 45%;
+    }
+}
+
+        .intro .basic .nameCH {
+            font-family: 'KaiTi';
+            font-size: 200%;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .intro .basic .nameEN {
+            font-family: "Comic Sans MS";
+            font-size: 150%;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .intro .basic .clickForPronunciation {
+            font-size: 18px;
+            font-family: Arial;
+            line-height: 1;
+            text-align: center;
+            color: #A9A9A9;
+        }
+
+        .intro .basic .links {
+            font-size: 18px;
+            font-family: Arial;
+            line-height: 1;
+            text-align: center;
+        }
+
+    .intro .about {
+        flex: 2;
+        padding: 5px;
+    }
+
+.pronounce {
+    position: relative;
+    cursor: pointer;
+}
+
+    .pronounce:hover {
+        background: #C0DAEB
+    }
+
+    .pronounce:hover::after {
+        display: none;
+        content: "Click for pronunciation";
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+        background-color: #f8f9fa;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 5px;
+        z-index: 1;
+        font-size: 15px;
+        color: black;
+        font-weight: normal;
+        font-style: normal;
+        font-family: "Times New Roman";
+    }
+
+.sectionTitle {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: Georgia;
+}
+
+.mainText {
+    font-size: 18px;
+    font-family: Arial;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+@media (max-width: 1000px) {
+    .sectionTitle{
+        font-size: 28px;
+    }
+    .mainText {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    .sectionTitle {
+        font-size: 24px;
+    }
+
+    .mainText {
+        font-size: 14px;
+    }
+}
+
+.publications {
+    margin: 0 auto;
+    max-width: 65rem;
+    padding-top: 1.2rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    padding-bottom: 1.2rem;
+}
+
+.publication {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+}
+
+    .publication .publicationImageSection {
+        flex: 1;
+        padding: 5px;
+        text-align: center;
+    }
+
+        .publication .publicationImageSection .publicationImage {
+            width: 100%;
+        }
+
+    .publication .publicationTextSection {
+        flex: 3.5;
+        padding: 5px;
+    }
+
+        .publication .publicationTextSection .publicationTextTitle {
+            font-size: 24px;
+            font-family: Arial;
+            font-weight: bold;
+            line-height: 1.2;
+            text-align: left;
+            padding-bottom: 3px;
+        }
+
+        .publication .publicationTextSection .publicationTextAuthors {
+            font-size: 18px;
+            font-family: Arial;
+            line-height: 1.5;
+            text-align: left;
+            padding-top: 3px;
+            padding-bottom: 3px;
+        }
+
+        .publication .publicationTextSection .publicationTextEqualContribution {
+            font-size: 18px;
+            font-family: Arial;
+            line-height: 1.5;
+            text-align: left;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            color: #ce3142;
+        }
+
+        .publication .publicationTextSection .publicationTextVenue {
+            font-size: 18px;
+            font-family: Arial;
+            line-height: 1.5;
+            text-align: left;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            color: #956a90;
+            font-weight: bold;
+        }
+
+        .publication .publicationTextSection .publicationTextSummary {
+            font-size: 16px;
+            font-family: Arial;
+            line-height: 1.5;
+            text-align: justify;
+            padding-top: 3px;
+            padding-bottom: 3px;
+        }
+
+        .publication .publicationTextSection .publicationTextLinks {
+            font-size: 12px;
+            font-family: Arial;
+            line-height: 1.5;
+            text-align: left;
+            padding-top: 12px;
+            padding-bottom: 3px;
+        }
+
+        .publication .publicationTextSection .publicationTextLink {
+            background-color: white;
+            border: 1px solid #2b87d4;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            padding: 5px;
+            margin: 3px;
+        }
+
+@media (max-width: 1000px) {
+    .publication .publicationTextSection .publicationTextTitle {
+        font-size: 21px;
+    }
+
+    .publication .publicationTextSection .publicationTextAuthors {
+        font-size: 16px;
+    }
+
+    .publication .publicationTextSection .publicationTextAuthors {
+        font-size: 16px;
+    }
+
+    .publication .publicationTextSection .publicationTextSummary {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    .publication .publicationTextSection .publicationTextTitle {
+        font-size: 18px;
+    }
+
+    .publication .publicationTextSection .publicationTextVenue {
+        font-size: 14px;
+    }
+
+    .publication .publicationTextSection .publicationTextVenue {
+        font-size: 14px;
+    }
+
+    .publication .publicationTextSection .publicationTextSummary {
+        font-size: 14px;
+    }
+}
