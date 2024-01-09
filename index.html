@@ -31,6 +31,7 @@
     <title>Shuangquan Feng</title>
     <meta name="description" content="Shuangquan Feng's personal website">
     <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Ma Shan Zheng' rel='stylesheet'>
 </head>
 
 <body>
@@ -70,8 +71,41 @@
                     }
                 </script>
                 -->
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        var ChineseFeng = document.getElementById('ChineseFeng');
+                        var ChineseShuang = document.getElementById('ChineseShuang');
+                        var ChineseQuan = document.getElementById('ChineseQuan');
+                        var kaiTiAvailable = isFontAvailable('KaiTi');
+
+                        if (!kaiTiAvailable) {
+                            ChineseFeng.style.fontFamily = 'Ma Shan Zheng';
+                            ChineseFeng.style.fontWeight = 'normal';
+                            ChineseShuang.style.fontFamily = 'Ma Shan Zheng';
+                            ChineseShuang.style.fontWeight = 'normal';
+                            ChineseQuan.style.fontFamily = 'Ma Shan Zheng';
+                            ChineseQuan.style.fontWeight = 'normal';
+                        }
+                    });
+
+                    function isFontAvailable(fontName) {
+                        var canvas = document.createElement('canvas');
+                        var context = canvas.getContext('2d');
+                        var text = 'abcdefghijklmnopqrstuvwxyz0123456789';
+                        context.font = '72px monospace';
+                        var baselineSize = context.measureText(text).width;
+
+                        context.font = '72px ' + fontName + ', monospace';
+                        var newSize = context.measureText(text).width;
+
+                        return newSize != baselineSize;
+                    }
+                </script>
+
+
+
                 <div class="nameCH">
-                    <span class="pronounce" data-pronunciation="audios/Feng.mp3">冯</span><span class="pronounce" data-pronunciation="audios/Shuang.mp3">双</span><span class="pronounce" data-pronunciation="audios/Quan.mp3">全</span>
+                    <span class="pronounce" id = "ChineseFeng" data-pronunciation="audios/Feng.mp3">冯</span><span class="pronounce" id = "ChineseShuangquan" data-pronunciation="audios/Shuang.mp3">双</span><span class="pronounce" id = "ChineseQuan" data-pronunciation="audios/Quan.mp3">全</span>
                 </div>
                 <div class="nameEN">
                     <span class="pronounce" data-pronunciation="audios/Shuangquan.mp3">Shuangquan</span>

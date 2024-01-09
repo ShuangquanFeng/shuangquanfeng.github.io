@@ -1,3 +1,5 @@
+
+
 body {
     margin: 0;
 }
@@ -62,7 +64,7 @@ a:hover {
 }
 
         .intro .basic .nameCH {
-            font-family: 'KaiTi';
+            font-family: KaiTi;
             font-size: 200%;
             text-align: center;
             font-weight: bold;
