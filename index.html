@@ -77,8 +77,9 @@
                         var ChineseShuang = document.getElementById('ChineseShuang');
                         var ChineseQuan = document.getElementById('ChineseQuan');
                         var kaiTiAvailable = isFontAvailable('KaiTi');
+                        var STKaitiAvailable = isFontAvailable('STKaiti');
 
-                        if (!kaiTiAvailable) {
+                        if ((!kaiTiAvailable) && (!STKaitiAvailable)) {
                             ChineseFeng.style.fontFamily = 'Ma Shan Zheng';
                             ChineseFeng.style.fontWeight = 'normal';
                             ChineseShuang.style.fontFamily = 'Ma Shan Zheng';
