@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://shuangquanfeng.github.io/sitemap.xml
