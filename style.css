@@ -43,7 +43,7 @@ a:hover {
 }
 
     .intro .basic {
-        flex: 1;
+        flex: 1.5;
         padding: 5px;
         text-align: center;
     }
